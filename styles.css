@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@800&family=Montserrat:ital,wght@0,500;1,400&family=Rubik&display=swap');
+
+.return_equest, h2, p{
+	margin: 0;
+    padding: 0;
+	font-family: 'Inter', sans-serif;
+	box-sizing: border-box;
+}
+
+.return_equest {
+    padding: 20px;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.title {
+    font-size: 24px / 1.5;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.order-info-item >p:first-child {
+    width: 250px;
+}
+
+.img {
+    width: 128px;
+    height: 128px;
+    border-radius: 8px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn {
+    border-radius: 8px;
+    border: 1px solid #B3B3B3;
+    height: 25px;
+    width: 157px;
+    font-weight: 500;
+    font-size: 16px / 1.5;
+    cursor: pointer;
+}
+
+.btn:last-child {
+    background: #DCF3E7;
+    border-color: #14AE5C;
+}
+
+.indent {
+    margin-bottom: 20px;
+}
+
+.border {
+    border: 1px solid #E6E6E6;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.product_info {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #282828;
+}
+
+.product_info_name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.product_info_price {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.product_info_count {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.product_info_count > span {
+    font-weight: 500;
+}
+
+.product_info_seller {
+    font-weight: 500;
+    font-size: 16px;
+    color: #5f88f9;
+}
+
+.download_all {
+    margin-left: 10px;
+    font-weight: 500;
+    font: 500 24px;
+    letter-spacing: -0.02em;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+
+.product_modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+    background: rgba(41, 41, 51, 0.10);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_modal_content {
+    width: 688px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.product_modal_delivery {
+    margin-top: 20px;
+}
+
+.product_modal_delivery_input_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product_modal_delivery_input_item_type_number {
+    border-radius: 12px;
+    border: 1px solid #E6E6E6;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product_modal_delivery_result_price {
+    margin-bottom: 20px;
+}
+
+.product_modal_delivery_input_item_type_number input[type='number'] {
+	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+
+.product_modal_delivery_input_item_type_number input[type='number']::-webkit-inner-spin-button,
+.product_modal_delivery_input_item_type_number input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.comment_textarea {
+    resize: none;
+    width: 94%;
+    height: 112px;
+	padding: 10px 12px; 
+}
+
+.image_label {
+    width: 288px;
+    height: 38px;
+	position: relative;
+	text-align: center;
+	transition: all 0.25s;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	gap: 8px;
+	overflow-x: scroll;
+    border-radius: 8px;
+    background: rgba(66, 104, 176, 10%);
+    margin-top: 20px;
+}
+
+.image_label::-webkit-scrollbar {
+	height: 3px;
+}
+
+.image_label::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.image_label::-webkit-scrollbar-thumb {
+	background: var(--text-grey-color);
+	border-radius: 20px;
+}
+
+.image_label:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.image_label input {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.block_save {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}

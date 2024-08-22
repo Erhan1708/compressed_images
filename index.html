@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body style="margin: 0; padding: 0;">
+    <div class="return_equest">
+        <div class="flex space-between">
+            <h2 class="title">Заказ: 25-25198-31011</h2>
+            <div>
+                <!-- <button id="cancel" class="btn">Отклонить запрос</button> -->
+                <button id="confirm" class="btn" >Подтвердить запрос</button>
+            </div>
+        </div>
+        <div class="indent border">
+            <div class="indent">
+                <div class="column">
+                    <div class="flex order-info-item">
+                        <p>Дата заказа</p>
+                        <p>24 июн. 2024г., 19:45:28 (Дата запроса 25 июн. 2024г., 09:45:28)</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Номер покупателя</p>
+                        <p>+996505010596</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Номер заказа</p>
+                        <p>#61-32764-27892</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Номер получателя</p>
+                        <p>+996 505 010 596</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Имя получателя</p>
+                        <p>Каныбек уулу Майрамбек</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Адрес получателя</p>
+                        <p>Кыргызстан, Бишкек, Бишкек, Дачная, 60а</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Статус</p>
+                        <p>Заказ в ожидании возврата</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Оплата</p>
+                        <p>MBANK</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Вкл?</p>
+                        <p>Да</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Клиент</p>
+                        <p>Мобильное приложение</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Причина возврата</p>
+                        <p>Плохое качество</p>
+                    </div>
+                    <div class="flex order-info-item">
+                        <p>Комментарий</p>
+                        <p>Null</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">Товары для возврата</h2>
+            <div class="border">
+                <div class="flex" style="margin-bottom: 20px;">
+                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="27" height="27" fill="url(#pattern0_265_9207)"/>
+                        <defs>
+                        <pattern id="pattern0_265_9207" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_265_9207" transform="scale(0.00195312)"/>
+                        </pattern>
+                        <image id="image0_265_9207" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>                        
+                    <h2 class="title" style="margin: 0;">Причина возврата: Плохое качество</h2>
+                </div>
+                <div class="indent">
+                    <div class="flex">
+                        <img class="img" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                        <div class="product_info">
+                            <p class="product_info_name">Смартфон Apple iPhone 13 Pro Max 512 ГБ, небесно-голубой</p>
+                            <b class="product_info_price">65,999c</b>
+                            <p class="product_info_count">Количество: <span>1</span></p>
+                            <p class="product_info_seller">Продавец: <span>Softech.kg</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="indent">
+                    <h2 class="title">Фотографии от клиента</h2>
+                    <div class="flex">
+                        <div class="flex">
+                            <img class="img" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                            <img class="img" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                            <img class="img" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                            <img class="img" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                            <img class="img" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                            <img class="img" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                        </div>
+                        <p class="download_all">Скачать все</p>
+                    </div>
+                </div>
+                <div class="indent">
+                    <h2 class="title">Комментарий от клиента</h2>
+                    <div>
+                        <p>Айфон был в использовании. Внутри коробки была сим карта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indent border">
+            <h2 class="title">Комментарий от продавца</h2>
+            <textarea class="border comment_textarea" name="" id=""></textarea>
+            <h2 class="title">Загрузите фото товара</h2>
+            <p style="margin-bottom: 20px;">В формате JPG, JPEG, PNG</p>
+            <div class="flex" id="comment_seller_images">
+            </div>
+            <input type="file" id="fileInput" multiple style="display: none;">
+            <button id="addMoreImagesButton" style="display: none;">Добавить ещё картинки</button>
+            <label class="image_label" htmlFor='image'>
+                <input
+                    type='file'
+                    accept='image/*'
+                    id='image'
+                    name='image'
+                    multiple
+                    onchange="onImages(event)"
+                />
+                Выбрать файл
+            </label>
+            <div class="block_save">
+                <button id="save_btn_comment" class="btn" onclick="onSave()">Сохранить</button>
+            </div>
+        </div>
+        <!-- product modal -->
+        <div id="product_modal" class="product_modal">
+            <div class="product_modal_content">
+                <h3 class="title" style="text-align: center;">Настройте сумму для возврата средств</h3>
+                <div class="flex">
+                    <img class="img" src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp" alt="">
+                    <div class="product_info">
+                        <p class="product_info_name">Смартфон Apple iPhone 13 Pro Max 512 ГБ, небесно-голубой</p>
+                        <b class="product_info_price">65,999c</b>
+                        <p class="product_info_count">Количество: <span>1</span></p>
+                        <p class="product_info_seller">Продавец: <span>Softech.kg</span></p>
+                    </div>
+                </div>
+                <div class="product_modal_delivery">
+                    <b>Доставка: 150 сом</b>
+                    <p style="margin-top: 10px; margin-bottom: 10px;">Включить стоимость доставки в возврат?</p>
+                    <div class="product_modal_delivery_inputs">
+                        <div class="product_modal_delivery_input_item">
+                            <input type="radio" name="include_delivery">
+                            <label for="include_delivery">Да</label>
+                        </div>
+                        <div class="product_modal_delivery_input_item">
+                            <input type="radio" name="include_delivery" checked>
+                            <label for="exclude_delivery">Нет</label>
+                        </div>
+                        <div class="product_modal_delivery_input_item">
+                            <input type="radio" name="include_delivery">
+                            <label for="exclude_delivery">Другая сумма</label>
+                            <input class="product_modal_delivery_input_item_type_number" type="number">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="product_modal_delivery_result_price">
+                        <div class="flex space-between">
+                            <p>Товары</p>
+                            <p>65900</p>
+                        </div>
+                        <div class="flex space-between">
+                            <p>Доставка</p>
+                            <p>150</p>
+                        </div>
+                        <div class="flex space-between">
+                            <p>Итого сумма к возврат</p>
+                            <p>66050</p>
+                        </div>
+                    </div>
+                    <div class="flex" style="justify-content: end;">
+                        <button id="product_modal_cancel" class="btn">Отмена</button>
+                        <button class="btn" >Подтвердить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end product modal -->
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
